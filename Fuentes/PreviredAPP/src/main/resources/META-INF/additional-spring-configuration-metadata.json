@@ -1,0 +1,47 @@
+{"properties": [
+  {
+    "name": "previred.url.empresa.all",
+    "type": "java.lang.String",
+    "description": "A description for 'previred.url.empresa.all'"
+  },
+  {
+    "name": "previred.key",
+    "type": "java.lang.String",
+    "description": "A description for 'previred.key'"
+  },
+  {
+    "name": "previred.url.trabajador.save",
+    "type": "java.lang.String",
+    "description": "A description for 'previred.url.trabajador.save'"
+  },
+  {
+    "name": "previred.url.empresa.delete.id",
+    "type": "java.lang.String",
+    "description": "A description for 'previred.url.empresa.delete.id'"
+  },
+  {
+    "name": "previred.url.empresa.by.id",
+    "type": "java.lang.String",
+    "description": "A description for 'previred.url.empresa.by.id'"
+  },
+  {
+    "name": "previred.url.empresa.save",
+    "type": "java.lang.String",
+    "description": "A description for 'previred.url.empresa.save'"
+  },
+  {
+    "name": "previred.url.trabajador.all",
+    "type": "java.lang.String",
+    "description": "A description for 'previred.url.trabajador.all'"
+  },
+  {
+    "name": "previred.url.trabajador.by.id",
+    "type": "java.lang.String",
+    "description": "A description for 'previred.url.trabajador.by.id'"
+  },
+  {
+    "name": "previred.url.trabajador.delete.id",
+    "type": "java.lang.String",
+    "description": "A description for 'previred.url.trabajador.delete.id'"
+  }
+]}

@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "da481583-4aa6-4dc3-ac57-d95c4226f490",
+		"name": "PreviRed",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5509405"
+	},
+	"item": [
+		{
+			"name": "empresa",
+			"item": [
+				{
+					"name": "getEmpresas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8891/api/getEmpresas/",
+							"host": [
+								"localhost"
+							],
+							"port": "8891",
+							"path": [
+								"api",
+								"getEmpresas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveEmpresa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"rut\":\"652169686\",\n    \"razonSocial\": \"Nueva Empresa 2\",\n    \"identificador\": \"987fghjkjn12112\",\n    \"fecha\": \"2024-02-11\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8891/api/empresa",
+							"host": [
+								"localhost"
+							],
+							"port": "8891",
+							"path": [
+								"api",
+								"empresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EmpresaById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8891/api/getEmpresa/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8891",
+							"path": [
+								"api",
+								"getEmpresa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EmpresaUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"rut\":\"252689879\",\n    \"razonSocial\": \"E3 Soluciones Informaticas\",\n    \"identificador\": \"987fghjkjn12112\",\n    \"fecha\": \"2024-01-31\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8891/api/empresa/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8891",
+							"path": [
+								"api",
+								"empresa",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EmpresaDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8891/api/empresa/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8891",
+							"path": [
+								"api",
+								"empresa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "trabajador",
+			"item": [
+				{
+					"name": "getTrabajadores",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8891/api/getTrabajadores/",
+							"host": [
+								"localhost"
+							],
+							"port": "8891",
+							"path": [
+								"api",
+								"getTrabajadores",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TrabajadorById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8891/api/getTrabajador/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8891",
+							"path": [
+								"api",
+								"getTrabajador",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveTrabajador",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"rut\":\"268888411\",\n   \"nombre\":\"Jose Esteban\",\n   \"apellidoPaterno\":\"Perez\",\n   \"apellidoMaterno\":\"Cardenas\",\n   \"direccion\":\"Mi casa\",\n   \"empresa\":{\n        \"id\": 1,\n        \"rut\": \"652169686\",\n        \"razonSocial\": \"Nueva Empresa 2\",\n        \"fecha\": \"2024-02-11T00:00:00.000+00:00\",\n        \"identificador\": \"987fghjkjn12112\",\n        \"trabajadores\": []\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8891/api/trabajador",
+							"host": [
+								"localhost"
+							],
+							"port": "8891",
+							"path": [
+								"api",
+								"trabajador"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TrabaajdorUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"rut\":\"252689879\",\n   \"nombre\":\"Jose Esteban\",\n   \"apellidoPaterno\":\"Perez\",\n   \"apellidoMaterno\":\"Marin\",\n   \"direccion\":\"Mi casa\",\n   \"empresa\":{\n        \"id\": 2,\n        \"rut\": \"252689879\",\n        \"razonSocial\": \"Nueva Empresa 2\",\n        \"fecha\": \"2024-02-11T00:00:00.000+00:00\",\n        \"identificador\": \"987fghjkjn12112\",\n        \"trabajadores\": []\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8891/api/trabajador/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8891",
+							"path": [
+								"api",
+								"trabajador",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TrabajadorDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8891/api/trabajador/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8891",
+							"path": [
+								"api",
+								"trabajador",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
